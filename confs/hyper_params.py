@@ -90,6 +90,7 @@ item_proto_chose_original_hyper_params = {
             "ft_type": "embedding",
         }
     },
+    'device': 'mps',
 }
 proto_double_tie_chose_original_hyper_params = {
     **base_hyper_params,

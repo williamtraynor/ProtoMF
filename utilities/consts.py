@@ -1,7 +1,6 @@
 import os
 
 current_path = os.path.dirname(os.path.realpath(__file__))
-config_file_list = [os.path.join(current_path, "test_hyper_tuning_config.yaml")]
 
 # --- Experiment Constants --- #
 SINGLE_SEED = 38210573

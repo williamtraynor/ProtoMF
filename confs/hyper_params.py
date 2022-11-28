@@ -2,7 +2,7 @@ import torch
 from ray import tune
 
 base_param = {
-    'device': 'cuda' if torch.cuda.is_available() else 'cpu',
+    'device': 'mps' if torch.backends.mps.is_available() else 'cpu',
     'n_epochs': 100,
     'eval_neg_strategy': 'uniform',
     'val_batch_size': 256,
@@ -90,7 +90,6 @@ item_proto_chose_original_hyper_params = {
             "ft_type": "embedding",
         }
     },
-    'device': 'mps',
 }
 proto_double_tie_chose_original_hyper_params = {
     **base_hyper_params,

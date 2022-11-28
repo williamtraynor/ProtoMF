@@ -54,10 +54,10 @@ dependencies:
   - openssl
   - pillow
   - pip
-  - python=3.9.7
-  - pytorch=1.9.1
-  - readline=8.1
-  - scipy=1.7.1
+  - python
+  - pytorch
+  - readline
+  - scipy
   - setuptools
   - six
   - sqlite

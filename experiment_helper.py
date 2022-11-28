@@ -6,7 +6,7 @@ import wandb
 from ray import tune
 from ray.tune.integration.wandb import WandbLoggerCallback
 from ray.tune.schedulers import ASHAScheduler
-from ray.tune.suggest.hyperopt import HyperOptSearch
+from ray.tune.search.hyperopt import HyperOptSearch
 
 from rec_sys.protomf_dataset import get_protorecdataset_dataloader
 from rec_sys.tester import Tester

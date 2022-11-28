@@ -72,7 +72,7 @@ dependencies:
   - xz
   - zlib
   - zstd
-  - pip3:
+  - pip:
     - absl-py 
     - aiohttp 
     - aiohttp-cors 

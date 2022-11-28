@@ -3,26 +3,26 @@ channels:
   - pytorch
   - defaults
 dependencies:
-  - _libgcc_mutex
+  #- _libgcc_mutex
   #- _openmp_mutex
   - blas
   - bottleneck
   - bzip2
   - ca-certificates
   - certifi
-  - cudatoolkit
+  #- cudatoolkit
   - ffmpeg
   - freetype
   - gmp
   - gnutls
-  - intel-openmp
+  #- intel-openmp
   - jpeg
   - lame
   - lcms2
   #- ld_impl_linux-64
   - libffi
   #- libgcc-ng
-  - libgfortran-ng
+  #- libgfortran-ng
   #- libgfortran4
   #- libgomp
   - libidn2
@@ -37,10 +37,10 @@ dependencies:
   - libvpx
   - libwebp-base
   - lz4-c
-  - mkl
-  - mkl-service
-  - mkl_fft
-  - mkl_random
+  #- mkl
+  #- mkl-service
+  #- mkl_fft
+  #- mkl_random
   - ncurses
   - nettle
   - ninja

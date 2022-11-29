@@ -1,13 +1,13 @@
 import os
 
-current_path = os.path.dirname(os.path.realpath(__file__))
+current_path = os.getcwd()
 
 # --- Experiment Constants --- #
 SINGLE_SEED = 38210573
 SEED_LIST = [SINGLE_SEED, 9491758, 2931009]
 NUM_SAMPLES = 100  # How many hyperparameters samples will be taken into account
 DATA_PATH = os.path.join(current_path, 'data/lfm2b-1mon')   # Path pointing at the data folder
-GPU_PER_TRIAL = 1  # Ray Tune parameter,  how many gpus are allocated for a single trial experiment (https://docs.ray.io/en/releases-1.9.0/tune/api_docs/execution.html)
+GPU_PER_TRIAL = 0.2  # Ray Tune parameter,  how many gpus are allocated for a single trial experiment (https://docs.ray.io/en/releases-1.9.0/tune/api_docs/execution.html)
 CPU_PER_TRIAL = 1  # Ray Tune parameter, how many cpus are allocated for a single trial experiment
 # --- Training Constants --- #
 MAX_PATIENCE = 10  # How many epochs without an improvement must pass before stopping the experiment
